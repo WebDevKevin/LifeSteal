@@ -1,0 +1,25 @@
+name: LifeStealPlugin
+version: 1.0
+main: me.tauntaunchewie.LifeStealPlugin
+api-version: 1.18
+
+commands:
+  lifesteal:
+    description: Drops a load when a player hits SHIFT
+    usage: /<command> [on|off|status|defaulthearts|resetuser]
+    permission: lifestealplugin.init
+    permission-message: You do not have permission to execute that command.
+
+permissions:
+  lifestealplugin.init:
+    description: Basic ability to see the plugin
+    default: op
+  lifestealplugin.enable:
+    description: Permission to enable and disable life stealing
+    default: op
+  lifestealplugin.sethearts:
+    description: Permission to set starting amount of hearts
+    default: op
+  lifestealplugin.resetuser:
+    description: Permission to reset a user to default - also unban
+    default: op
